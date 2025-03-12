@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cá Nhân</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">My Portfolio</div>
+            <ul class="menu">
+                <li><a href="#" onclick="showSection('home')">Trang Chủ</a></li>
+                <li><a href="#" onclick="showSection('about')">Giới Thiệu</a></li>
+                <li><a href="#" onclick="showSection('projects')">Dự Án</a></li>
+                <li><a href="#" onclick="showSection('contact')">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="content active">
+            <h1>Chào mừng đến với Portfolio của tôi</h1>
+        </section>
+
+        <section id="about" class="content">
+            <h2>Giới thiệu</h2>
+            <p><strong>Tên:</strong> Nguyễn Thị Mỹ Hạnh</p>
+        </section>
+
+        <section id="projects" class="content">
+            <h2>Dự Án</h2>
+            <p>Bài tập lớn thiết kế web</p>
+        </section>
+
+        <section id="contact" class="content">
+            <h2>Liên Hệ</h2>
+            <p><strong>Email:</strong> ngthimyhanh5562@gmail.com</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
