@@ -1,46 +1,142 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Cá Nhân</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang cá nhân</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        margin: 0;
+        display: flex;
+      }
 
-    <header>
-        <nav class="navbar">
-            <div class="logo">My Portfolio</div>
-            <ul class="menu">
-                <li><a href="#" onclick="showSection('home')">Trang Chủ</a></li>
-                <li><a href="#" onclick="showSection('about')">Giới Thiệu</a></li>
-                <li><a href="#" onclick="showSection('projects')">Dự Án</a></li>
-                <li><a href="#" onclick="showSection('contact')">Liên Hệ</a></li>
-            </ul>
-        </nav>
-    </header>
+      .sidebar {
+        width: 250px;
+        background: green ;
+        padding: 10px;
+        position: fixed;
+        height: 100vh;
+        overflow-y: auto;
+      }
 
-    <main>
-        <section id="home" class="content active">
-            <h1>Chào mừng đến với Portfolio của tôi</h1>
-        </section>
+      .content {
+        margin-left: 270px;
+        padding: 20px;
+        flex-grow: 1;
+      }
 
-        <section id="about" class="content">
-            <h2>Giới thiệu</h2>
-            <p><strong>Tên:</strong> Nguyễn Thị Mỹ Hạnh</p>
-        </section>
+      #TieuDe {
+        color: rgb(203, 207, 76);
+        font-size: 32px;
+        text-align: center;
+        background: rgb(16, 96, 19);
+        margin: 20px;
+        padding: 8px;
+      }
 
-        <section id="projects" class="content">
-            <h2>Dự Án</h2>
-            <p>Bài tập lớn thiết kế web</p>
-        </section>
+      .NoiDung {
+        color: rgb(8, 68, 8);
+        font-size: 22px;
+        text-align: justify;
+        margin: 5px;
+      }
 
-        <section id="contact" class="content">
-            <h2>Liên Hệ</h2>
-            <p><strong>Email:</strong> ngthimyhanh5562@gmail.com</p>
-        </section>
-    </main>
+      summary {
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 10px;
+        background: green;
+        color: white;
+        display: block;
+        border-radius: 5px;
+        text-align: center;
+      }
 
-    <script src="script.js"></script>
-</body>
+      summary:hover {
+        background: white;
+      }
+
+      .submenu {
+        padding-left: 20px;
+        margin-top: 5px;
+      }
+
+      .submenu a {
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+        color: black;
+      }
+
+      .submenu a:hover {
+        background: white;
+      }
+
+      .hobbies img {
+        width: 20%;
+        margin: 5px;
+      }
+      .avatar {
+        width: 100px; /* Điều chỉnh kích thước ảnh */
+        height: 100px;
+        border-radius: 50%; /* Làm tròn */
+        display: block;
+        margin: 10px auto 20px; /* Căn giữa theo chiều ngang */
+        border: 3px solid white;
+        position: relative; /* Giữ vị trí trong sidebar */
+        top: 0; /* Đẩy lên đầu */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+     
+  </div>
+      <!-- Phần sở thích được di chuyển ra ngoài danh sách bài tập -->
+      <summary>Sở thích</summary>
+
+        <div class="hobbies">
+
+        </div>
+      </details>
+    </div>
+
+    <div class="content">
+      <h1 id="TieuDe">Xin Chào</h1>
+      <img
+        src="https://cdn.tgdd.vn/Files/2021/03/25/1338170/8-phim-hoat-hinh-hai-huoc-hap-dan-nhat-moi-thoi-dai-202201181202534781.jpg"
+        class="avatar"
+      />
+      <p class="NoiDung">
+        <h2>Quá trình học tập</h2>
+  <p>
+    Mình là <strong>Mỹ Hạnh</strong>, sinh viên năm nhất ngành <strong>Công nghệ Thông tin</strong> .
+  </p>
+    <p>Hiện tại, mình đang học về <strong>thiết kế web</strong>, đặc biệt là <strong>HTML & CSS</strong>.
+    </p>
+<h2>Khả năng về lĩnh vực </h2>
+<p>
+    Mình có khả năng với <strong>reading book</strong>.
+    Ngoài ra, mình cũng thích lập trình với <strong>C</strong>.
+</p>
+
+<h2>Ngành học</h2>
+<p>
+    Ngành <strong>Công nghệ Thông tin</strong> giúp mình hiểu sâu hơn về cách xây dựng và phát triển phần mềm,
+    đặc biệt là trong lĩnh vực <strong>web development</strong>.
+</p>
+
+<h2>Định hướng công việc</h2>
+<p>
+    Mình muốn trở thành <strong> </strong>.
+  </p>
+ <p>   Mục tiêu của mình là thành thạo <strong>CSS</strong>.
+ </p>
+      </p>
+    </div>
+  </body>
 </html>
